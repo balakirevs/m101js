@@ -32,7 +32,7 @@ function PostsDAO(db) {
         // hw3.2 TODO
         posts.insert(post, function (err, result) {
             "use strict";
-            callback(err,result[0]);
+            callback(err,result[0].permalink);
         });
         //callback(Error("insertEntry NYI"), null);
     }
